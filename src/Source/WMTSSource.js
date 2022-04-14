@@ -77,6 +77,7 @@ class WMTSSource extends TMSSource {
             `&VERSION=${source.version || '1.0.0'}` +
             '&REQUEST=GetTile' +
             `&STYLE=${source.style || 'normal'}` +
+            `&api=${source.api}` +
             `&TILEMATRIXSET=${source.tileMatrixSet}` +
             '&TILEMATRIX=%TILEMATRIX&TILEROW=%ROW&TILECOL=%COL';
     }
